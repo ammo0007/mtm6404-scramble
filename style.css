@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 36px 16px;
+  min-height: 100vh;
+  background: #eef2ff;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
+}
+
+.game {
+  max-width: 650px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 12px 36px rgba(30, 41, 59, 0.12);
+}
+
+.eyebrow {
+  color: #525ba5;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 44px;
+  margin: 8px 0;
+}
+
+.intro {
+  color: #64748b;
+  margin-top: 0;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.stats div {
+  background: #f1f5f9;
+  padding: 14px 7px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.stats span {
+  display: block;
+  color: #64748b;
+  font-size: 12px;
+  margin-bottom: 9px;
+}
+
+.stats strong {
+  font-size: 20px;
+}
+
+.play-area {
+  border: 2px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 28px;
+  text-align: center;
+}
+
+.hint {
+  color: #64748b;
+  margin: 0 0 12px;
+}
+
+.scrambled {
+  font-size: 33px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  overflow-wrap: anywhere;
+  color: #4338ca;
+  margin: 18px 0 32px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+input {
+  width: 100%;
+  border: 2px solid #cbd5e1;
+  border-radius: 9px;
+  padding: 13px;
+  font-size: 17px;
+}
+
+input:focus {
+  outline: 2px solid #818cf8;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+button {
+  flex: 1;
+  background: #4338ca;
+  border: none;
+  border-radius: 9px;
+  color: white;
+  padding: 13px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #475569;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.message {
+  min-height: 20px;
+  margin: 22px 0 0;
+  color: #334155;
+}
+
+.save-note {
+  text-align: center;
+  color: #64748b;
+  font-size: 12px;
+  margin: 24px 0 0;
+}
+
+@media (max-width: 500px) {
+  .game {
+    padding: 20px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .play-area {
+    padding: 18px;
+  }
+
+  .scrambled {
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
